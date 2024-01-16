@@ -12,9 +12,11 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-You need a TG bot token to launch this code on locally. You also need to provide
+Create `.env` file in root directory with environmental variables 
+
+You need a TG bot token from BotFather to launch this code locally. You also need to provide
 save path for downloaded videos.
-All environmental variables are:
+Environmental variables are:
 - `TOKEN=your_token_here`
 - `VIDEO_SAVE_PATH=C:\\Users\\{user}\\Downloads`
 
