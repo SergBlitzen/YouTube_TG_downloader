@@ -62,11 +62,5 @@ async def download_video(call: types.CallbackQuery, state: FSMContext):
         'audio': video_obj.streams.get_audio_only()
     }
     actions[call.data].download(output_path=VIDEO_SAVE_PATH)
-    # if call.data == 'video':
-    #
-    # elif call.data == 'audio':
-    #
-    # else:
-    #     await call.message.answer("Unknown query data")
     await call.message.answer("Download complete. Check your folder")
 
