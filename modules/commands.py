@@ -14,7 +14,6 @@ main_router = Router()
 
 class VideoEdit(StatesGroup):
     setting_video_url = State()
-    setting_audio_url = State()
 
 
 @main_router.message(Command(commands=['start']))
